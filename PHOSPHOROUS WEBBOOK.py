@@ -39,7 +39,7 @@ st.title(selected_page)
 if selected_page == "Home":
     st.header("Phosphorus: From Alchemy to Agriculture")
     st.divider()
-    image = "images/1.jpg"
+    image = Image.open("C:\\Users\\admin\\Documents\\ACADEMICS_COLLEGE\\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\\1.jpg")
     
 
     st.write("""
@@ -100,7 +100,7 @@ elif selected_page == "About the Element":
     # Display table
     st.markdown(table_html, unsafe_allow_html=True)
 
-    image = "images/9.jpg"
+    image = Image.open("C:\\Users\\admin\\Documents\\ACADEMICS_COLLEGE\\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\\9.jpg")
 
     # Convert image to base64
     def image_to_base64(image):
@@ -155,7 +155,7 @@ elif selected_page == "About the Element":
     "White Phosphorus": {
         "Name": "White Phosphorous",
         "Structure": "Discrete P₄ tetrahedra",
-        "Diagram": "images/6.jpg",
+        "Diagram": "C:\\Users\\admin\\Documents\\ACADEMICS_COLLEGE\\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\\6.jpg",
         "Colour": "White or yellow",
         "Melting Point": "~44°C (317 K)",
         "Stability": "Least stable, highly reactive",
@@ -167,7 +167,7 @@ elif selected_page == "About the Element":
     "Black Phosphorus": {
         "Name": "Black Phosphorous",
         "Structure": "Corrugated sheets, flaky crystals",
-        "Diagram": "images/7.jpg",
+        "Diagram": "C:\\Users\\admin\\Documents\\ACADEMICS_COLLEGE\\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\\7.jpg",
         "Colour": "Black",
         "Melting Point": "~44°C (317 K)",
         "Stability": "Most stable of all allotropes",
@@ -179,7 +179,7 @@ elif selected_page == "About the Element":
     "Red Phosphorus": {
         "Name": "Red Phosphorous",
         "Structure": "Polymeric chains of P₄ tetrahedra",
-        "Diagram": "images/8.jpg",
+        "Diagram": "C:\\Users\\admin\\Documents\\ACADEMICS_COLLEGE\\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\\8.jpg",
         "Colour": "Iron-grey",
         "Melting Point": "860 K",
         "Stability": "More stable than white phosphorus",
@@ -214,7 +214,7 @@ elif selected_page == "About the Element":
 
     st.divider()
     st.markdown("### <u>Phase Diagram</u>", unsafe_allow_html=True)
-    phase = "images/phase.png"
+    phase = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\phase.png")
     st.image(phase, use_container_width=True)
     st.divider()
     st.markdown("### <u>IUPAC Identifiers & Registry Information</u>", unsafe_allow_html=True)
@@ -260,7 +260,7 @@ elif selected_page == "Discovery & History":
         "human urine, rich in mysterious substances, might hold the secret."
     )
 
-    image = "images/2.jpg"
+    image = Image.open("C:\\Users\\admin\\Documents\\ACADEMICS_COLLEGE\\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\\2.jpg")
 
     # Convert image to base64
     def image_to_base64(image):
@@ -1059,7 +1059,8 @@ elif selected_page == "X-ray Photoelectron Spectroscopy Database":
 
 elif selected_page =="Uses":
     st.divider()
-    image = "images/uses.jpg"
+    image_path = r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\uses.png"
+    image = Image.open(image_path)
     st.image(image, use_container_width=True)
     st.divider()
 
@@ -1067,7 +1068,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col1:
-        image1 = "images/fertilizer.jpg"
+        image1 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\fertilizer.jpg")
         st.image(image1, use_container_width=True)
 
     with col2:
@@ -1089,7 +1090,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col2:
-        image2 = "images/animal.jpg"
+        image2 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\animal.jpg")
         st.image(image2, use_container_width=True)
 
     with col1:
@@ -1110,7 +1111,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col1:
-        image3 = "images/detergenet.jpg"
+        image3 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\detergenet.jpeg")
         st.image(image3, use_container_width=True)
 
     with col2:
@@ -1130,7 +1131,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col2:
-        image4 = "images/food.jpg"
+        image4 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\food.jpg")
         st.image(image4, use_container_width=True)
 
     with col1:
@@ -1150,7 +1151,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col1:
-        image5 ="images/metal.jpg"
+        image5 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\metal.jpeg")
         st.image(image5, use_container_width=True)
 
     with col2:
@@ -1170,7 +1171,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col2:
-        image6 = "images/water.jpg"
+        image6 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\water.jpeg")
         st.image(image6, use_container_width=True)
 
     with col1:
@@ -1189,7 +1190,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col1:
-        image7 = "images/special.jpg"
+        image7 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\special.jpeg")
         st.image(image7, use_container_width=True)
 
     with col2:
@@ -1208,7 +1209,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col2:
-        image8 = "images/toothpaste.jpg"
+        image8 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\toothpaste.jpeg")
         st.image(image8, use_container_width=True)
 
     with col1:
@@ -1226,7 +1227,7 @@ elif selected_page =="Uses":
     col1, col2 = st.columns(2)
 
     with col1:
-        image9 = "images/fireworks.jpg"
+        image9 = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\fireworks.jpeg")
         st.image(image9, use_container_width=True)
 
     with col2:
@@ -1271,7 +1272,7 @@ elif selected_page == "Phosphorus in the Economy":
     st.write("In response to rising phosphorus pollution, certain regions have imposed restrictions on fertilizer use. For example, the European Union has introduced regulations on phosphorus application rates in agriculture, and some U.S. states, such as Minnesota and Wisconsin, have restricted phosphorus-based lawn fertilizers to limit water contamination.")
     st.subheader("3.Phosphorus Recycling Initiatives")
     st.write("Some countries, such as Germany and Sweden, have implemented policies to encourage phosphorus recovery from wastewater and agricultural runoff. Technologies such as struvite precipitation and bio-based phosphorus recycling are gaining traction as part of circular economy strategies.")
-    image = "images/ban.jpg"
+    image = Image.open(r"C:\Users\admin\Documents\ACADEMICS_COLLEGE\MATERIAL SCIENCE FOR CHEMICAL ENGINEERS\ban.jpg")
     st.image(image, use_container_width=True)
     st.divider()
     st.markdown("## <u>Economic Instruments and Incentives </u>", unsafe_allow_html=True)
